@@ -1,5 +1,6 @@
+const drk = document.querySelector("#light-dark-mode")
+
 function darkmode() {
-  // all values retrieved from localStorage will be strings
   const wasDarkmode = localStorage.getItem('darkmode') === 'true';
   localStorage.setItem('darkmode', !wasDarkmode);
   drk.classList.toggle("bx-sun");
